@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import classNames from 'classnames';
+import "../styles/navbar.css"
 
 const Navbar = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
@@ -27,8 +28,69 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className={sidebarClasses}>sidebar</div>
-      <nav className={navbarClasses}>navbar</nav>
+      <div className={sidebarClasses}>
+        <div className='side-logo logo'>Adeola</div>
+        <ul className='side-links'>
+            <li>
+            </li>
+            <li>
+                <NavLink exact to="/">
+                    Home
+                </NavLink>
+            </li>
+            <li>
+                <NavLink exact to="/about">
+                    About
+                </NavLink>
+            </li>
+            <li>
+                <NavLink exact to="/portfolio">
+                    Portfolio
+                </NavLink>
+            </li>
+            <li>
+                <NavLink exact to="/contact">
+                    Contact
+                </NavLink>
+            </li>
+            <li>
+                <NavLink exact to="/trash">
+                    Trash
+                </NavLink>
+            </li>
+        </ul></div>
+      <nav className={navbarClasses}>
+        <div className='nav-logo logo'>Adeola</div>
+        <ul className='nav-links'>
+            <li>
+            </li>
+            <li>
+                <NavLink exact to="/">
+                    Home
+                </NavLink>
+            </li>
+            <li>
+                <NavLink exact to="/about">
+                    About
+                </NavLink>
+            </li>
+            <li>
+                <NavLink exact to="/portfolio">
+                    Portfolio
+                </NavLink>
+            </li>
+            <li>
+                <NavLink exact to="/contact">
+                    Contact
+                </NavLink>
+            </li>
+            <li>
+                <NavLink exact to="/trash">
+                    Trash
+                </NavLink>
+            </li>
+        </ul>
+      </nav>
     </div>
   );
 };

@@ -46,32 +46,3 @@ body {
   height: 100vh;
 }
 
-/* Add CSS classes to hide/show the elements based on screen size */
-.navbar-hidden {
-  display: none;
-}
-
-.sidebar-hidden {
-  display: none;
-}
-
-.navbar {
-  background-color: #333;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
-.sidebar {
-  position: absolute;
-  background-color: #444;
-  color: white;
-  padding: 1rem;
-  width: 200px;
-  height: 99vh;
-  right: 0;
-
-}
-
-/* Add more styling for your content as needed */
-
