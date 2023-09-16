@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import classNames from 'classnames';
 import { FaHome, FaUser, FaBriefcase, FaEnvelope, FaTrash } from 'react-icons/fa';
+import Hamburger from './hamburger';
 import "../styles/navbar.css"
 
 const Navbar = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -29,6 +31,10 @@ const Navbar = () => {
 
   const iconStyle = {
     marginRight: '10px',
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -71,9 +77,42 @@ const Navbar = () => {
         </ul></div>
       <nav className={navbarClasses}>
         <div className='nav-logo logo'>Adeola</div>
-        <ul className='nav-links'>
-            <li>
+        {(window.innerWidth <= 368) ? (
+            <>
+            <Hamburger isOpen={isMenuOpen} toggleMenu={toggleMenu} />
+            {isMenuOpen && (
+              <ul className='nav-links mobile-menu'>
+                 <li>
+                <NavLink exact to="/">
+                    Home
+                </NavLink>
             </li>
+            <li>
+                <NavLink exact to="/about">
+                    About
+                </NavLink>
+            </li>
+            <li>
+                <NavLink exact to="/portfolio">
+                    Portfolio
+                </NavLink>
+            </li>
+            <li>
+                <NavLink exact to="/contact">
+                    Contact
+                </NavLink>
+            </li>
+            <li>
+                <NavLink exact to="/trash">
+                    Trash
+                </NavLink>
+            </li>
+              </ul>
+            )}
+          </>
+        ) : (
+            <>
+            <ul className='nav-links'>
             <li>
                 <NavLink exact to="/">
                     Home
@@ -100,6 +139,9 @@ const Navbar = () => {
                 </NavLink>
             </li>
         </ul>
+            </>
+        )}
+
       </nav>
     </div>
   );
