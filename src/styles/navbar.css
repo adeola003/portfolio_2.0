@@ -9,10 +9,17 @@
   }
 
   .navbar {
-    background-color: #333;
+    background-color: #fff;
     color: white;
     padding: 1rem;
     text-align: center;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .nav-links {
+    display: flex;
+    column-gap: 15px;
   }
 
   .sidebar {
@@ -27,4 +34,15 @@
 
   .logo {
     color: blueviolet;
+  }
+
+  /* Feature to only display link name on hover or when active */
+
+  .link-text {
+    display: none;
+  }
+
+  .sidebar li:hover .link-text,
+  .sidebar li a.active-link .link-text {
+    display: inline;
   }
