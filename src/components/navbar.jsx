@@ -7,17 +7,23 @@ import "../styles/navbar.css"
 
 const Navbar = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
+  const [isPhoneScreen, setIsPhoneScreen] = useState(window.innerWidth <= 368)
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       setIsLargeScreen(window.innerWidth >= 768);
     };
+    const handlePhoneSize = () => {
+        setIsPhoneScreen(window.innerWidth <= 368)
+    }
 
     window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', handlePhoneSize);
 
     return () => {
       window.removeEventListener('resize', handleResize);
+      window.removeEventListener('resize', handlePhoneSize);
     };
   }, []);
 
@@ -27,6 +33,10 @@ const Navbar = () => {
 
   const sidebarClasses = classNames('sidebar', {
     'sidebar-hidden': !isLargeScreen,
+  });
+
+  const hamburgerClasses = classNames('hamburger', {
+    'hambuger-hidden' : !isPhoneScreen
   });
 
   const iconStyle = {
@@ -79,7 +89,8 @@ const Navbar = () => {
         <div className='nav-logo logo'>Adeola</div>
         {(window.innerWidth <= 368) ? (
             <>
-            <Hamburger isOpen={isMenuOpen} toggleMenu={toggleMenu} />
+
+            <Hamburger className={hamburgerClasses} isOpen={isMenuOpen} toggleMenu={toggleMenu} />
             {isMenuOpen && (
               <ul className='nav-links mobile-menu'>
                  <li>
