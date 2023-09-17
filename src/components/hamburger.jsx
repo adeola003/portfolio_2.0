@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Import icons
 
 const Hamburger = ({ isOpen, toggleMenu }) => {
