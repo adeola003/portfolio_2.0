@@ -6,7 +6,7 @@ import viteLogo from '/vite.svg'
 const Trash = () => {
     const [count, setCount] = useState(0)
   return (
-    <div>
+    <div className='sections'>
         <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src={viteLogo} className="logo" alt="Vite logo" />

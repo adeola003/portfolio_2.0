@@ -48,9 +48,9 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <>
       <div className={sidebarClasses}>
-        <div className='side-logo logo'>Adeola</div>
+        <div className='side-logo my-logo'>Adeola</div>
         <ul className='side-links'>
             <li>
             </li>
@@ -86,75 +86,78 @@ const Navbar = () => {
           </li>
         </ul></div>
       <nav className={navbarClasses}>
-        <div className='nav-logo logo'>Adeola</div>
+        <div className='nav-logo my-logo'>Adeola</div>
+        <>
         {(window.innerWidth <= 368) ? (
-            <>
 
-            <Hamburger className={hamburgerClasses} isOpen={isMenuOpen} toggleMenu={toggleMenu} />
-            {isMenuOpen && (
-              <ul className='nav-links mobile-menu'>
-                 <li>
-                <NavLink exact to="/">
-                    Home
-                </NavLink>
-            </li>
-            <li>
-                <NavLink exact to="/about">
-                    About
-                </NavLink>
-            </li>
-            <li>
-                <NavLink exact to="/portfolio">
-                    Portfolio
-                </NavLink>
-            </li>
-            <li>
-                <NavLink exact to="/contact">
-                    Contact
-                </NavLink>
-            </li>
-            <li>
-                <NavLink exact to="/trash">
-                    Trash
-                </NavLink>
-            </li>
-              </ul>
-            )}
-          </>
-        ) : (
-            <>
-            <ul className='nav-links'>
-            <li>
-                <NavLink exact to="/">
-                    Home
-                </NavLink>
-            </li>
-            <li>
-                <NavLink exact to="/about">
-                    About
-                </NavLink>
-            </li>
-            <li>
-                <NavLink exact to="/portfolio">
-                    Portfolio
-                </NavLink>
-            </li>
-            <li>
-                <NavLink exact to="/contact">
-                    Contact
-                </NavLink>
-            </li>
-            <li>
-                <NavLink exact to="/trash">
-                    Trash
-                </NavLink>
-            </li>
-        </ul>
-            </>
-        )}
+<div className='mobile-menu-container'>
 
+<Hamburger className={hamburgerClasses} isOpen={isMenuOpen} toggleMenu={toggleMenu} />
+{isMenuOpen && (
+  <ul className='nav-links mobile-menu'>
+     <li>
+    <NavLink exact to="/" onClick={toggleMenu}>
+        Home
+    </NavLink>
+</li>
+<li>
+    <NavLink exact to="/about" onClick={toggleMenu}>
+        About
+    </NavLink>
+</li>
+<li>
+    <NavLink exact to="/portfolio" onClick={toggleMenu}>
+        Portfolio
+    </NavLink>
+</li>
+<li>
+    <NavLink exact to="/contact" onClick={toggleMenu}>
+        Contact
+    </NavLink>
+</li>
+<li>
+    <NavLink exact to="/trash" onClick={toggleMenu}>
+        Trash
+    </NavLink>
+</li>
+  </ul>
+)}
+</div>
+) : (
+<>
+<ul className='nav-links'>
+<li>
+    <NavLink exact to="/">
+        Home
+    </NavLink>
+</li>
+<li>
+    <NavLink exact to="/about">
+        About
+    </NavLink>
+</li>
+<li>
+    <NavLink exact to="/portfolio">
+        Portfolio
+    </NavLink>
+</li>
+<li>
+    <NavLink exact to="/contact">
+        Contact
+    </NavLink>
+</li>
+<li>
+    <NavLink exact to="/trash">
+        Trash
+    </NavLink>
+</li>
+</ul>
+</>
+)}
+
+ </>
       </nav>
-    </div>
+    </>
   );
 };
 

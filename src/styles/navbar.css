@@ -18,8 +18,9 @@
     right: 0;
   }
 
-  .logo {
+  .my-logo {
     color: blueviolet;
+    height: auto;
   }
 
   /* Feature to only display link name on hover or when active */
@@ -35,12 +36,14 @@
 
   @media (max-width: 768px) {
     .navbar {
-        background-color: #fff;
+        background-color: #F0F8FF;
         color: white;
         padding: 1rem;
         text-align: center;
         display: flex;
-        align-items: baseline;
+        align-items: last baseline;
+        justify-content: space-between;
+        height: auto;
       }
 
       .nav-links {
@@ -49,7 +52,7 @@
       }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 368px) {
 
    /* Hamburger icon styles */
 .hamburger {
@@ -61,15 +64,20 @@
 
   /* Mobile menu styles */
   .mobile-menu {
-    display: block;
+    position: relative;
+    top: 130%;
+    left: -115px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 15px;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    background-color: #F0F8FF;
+
   }
 
-  .mobile-menu.active {
-    display: block;
-  }
+
 
   }
 
