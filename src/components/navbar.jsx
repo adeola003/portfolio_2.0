@@ -50,10 +50,8 @@ const Navbar = () => {
   return (
     <>
       <div className={sidebarClasses}>
-        <div className='side-logo my-logo'>Adeola</div>
+        
         <ul className='side-links'>
-            <li>
-            </li>
             <li>
             <NavLink exact to="/" activeClassName='active-link'>
               <FaHome style={iconStyle} /> {/* Icon */}

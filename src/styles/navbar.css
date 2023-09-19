@@ -9,18 +9,27 @@
 }
 
 .sidebar {
-  position: absolute;
-  background-color: #fff;
+  position: fixed;
   color: white;
-  padding: 1rem;
-  width: 200px;
-  height: 99vh;
+  width: 140px;
+  height: 41vh;
   right: 0;
+  top: 200px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebar:hover {
+  background-color: #fff;
+  border-radius: 50px;
 }
 
 .my-logo {
   color: blueviolet;
   height: auto;
+  text-align: center;
 }
 
 /* Feature to only display link name on hover or when active */
@@ -32,6 +41,15 @@
 .sidebar li:hover .link-text,
 .sidebar li a.active-link .link-text {
   display: inline;
+}
+
+.side-links {
+  list-style: none;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-left: 40px;
 }
 
 @media (max-width: 768px) {
