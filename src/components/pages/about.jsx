@@ -1,3 +1,4 @@
+import SkillBar from '../skillBar';
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 import { IoLogoTwitter, IoLogoFacebook, IoLogoWhatsapp } from 'react-icons/io';
 import pic from '../../assets/my_pic.jpg';
@@ -35,6 +36,11 @@ const About = () => {
       <section id="skills">
         <h2 className="section-header">Skills</h2>
         <hr />
+        <div className="skill-container">
+    <SkillBar skillName="Front-End Development" percentage={100} />
+    <SkillBar skillName="Back-End Development" percentage={80} />
+    {/* Add more skills here */}
+  </div>
         <ul>
           <li>Front-End: JavaScript, React, Redux, jQuery, HTML5, CSS3.</li>
           <li>Back-End: Ruby, Rails, PostgreSQL, MySQL.</li>

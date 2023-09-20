@@ -1,0 +1,46 @@
+.skill-bar {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 20px; /* Adjust spacing between skill bars */
+  }
+
+  .progress {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border: 10px solid #eee;
+    border-radius: 50%;
+    position: absolute;
+    clip: rect(0px, 100px, 100px, 50px);
+  }
+
+  .fill {
+    width: 0; /* Initial width is 0, will be dynamically adjusted */
+    height: 100%;
+    background-color: #d9832e; /* Fill color (customize as needed) */
+    border-radius: 50%;
+    transition: width 1s ease-in-out;
+  }
+
+  .skill-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .skill-percentage {
+    font-size: 14px;
+    color: #555;
+  }
