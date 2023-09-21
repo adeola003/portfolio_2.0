@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { CustomPrevArrow, CustomNextArrow } from '../CustonArrows';
+import "../../styles/portfolio.css"
 
 
 const Portfolio = () => {
@@ -19,15 +20,15 @@ const Portfolio = () => {
 
   return (
     <div>
-      <h2>Discover what I do</h2>
+      <h2 className='project-title'>Discover what I do</h2>
       <Slider {...settings}>
         <div className='project-card'>
           <h3>Slide 1</h3>
         </div>
-        <div>
+        <div className='project-card'>
           <h3>Slide 2</h3>
         </div>
-        <div>
+        <div className='project-card'>
           <h3>Slide 3</h3>
         </div>
 
