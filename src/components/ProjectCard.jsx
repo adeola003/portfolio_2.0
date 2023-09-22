@@ -14,29 +14,29 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div className="project-card">
-      <img src={project.screenshot} alt={project.name} />
+      <img className='project-main-img' src={project.screenshots[0]} alt={project.name} />
       <div className="project-details">
         <h3>{project.name}</h3>
         <p>{project.description}</p>
         <p>Technologies: {project.techStack.join(', ')}</p>
-        <button onClick={openModal}>Details</button>
+        <button className='details-btn' onClick={openModal}>Details</button>
       </div>
       {isModalOpen && (
         <Modal onClose={closeModal}>
           {/* Content for the modal */}
           <h2>{project.name}</h2>
           <p>{project.description}</p>
-          <div>
+          <div className='modal-images'>
             {/* Display more screenshots */}
-            {project.moreScreenshots.map((screenshot, index) => (
-              <img key={index} src={screenshot} alt={`Screenshot ${index + 1}`} />
+            {project.screenshots.map((screenshot, index) => (
+              <a className='screen-link' href={screenshot} target='blank'><img className='modal-image' key={index} src={screenshot} alt={`Screenshot ${index + 1}`} /></a>
             ))}
           </div>
-          <div>
+          <div className='modal-links'>
             {/* Links to GitHub and live version */}
-            <a href={project.githubRepo}>GitHub Repo</a>
+            <a href={project.github} target='blank'>GitHub Repo</a>
             {project.liveVersion && (
-              <a href={project.liveVersion}>Live Version</a>
+              <a href={project.live}>Live Version</a>
             )}
           </div>
         </Modal>
