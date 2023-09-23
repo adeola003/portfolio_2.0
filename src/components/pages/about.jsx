@@ -1,4 +1,5 @@
 import SkillBar from '../skillBar';
+import LevelSkills from '../LevelSkills';
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 import { IoLogoTwitter, IoLogoFacebook, IoLogoWhatsapp } from 'react-icons/io';
 import pic from '../../assets/my_pic.jpg';
@@ -39,7 +40,8 @@ const About = () => {
         <div className="skill-container">
     <SkillBar skillName="Front-End Development" percentage={100} />
     <SkillBar skillName="Back-End Development" percentage={80} />
-    {/* Add more skills here */}
+    <LevelSkills skill="Back-End Development" percentage={80} />
+
   </div>
         <ul>
           <li>Front-End: JavaScript, React, Redux, jQuery, HTML5, CSS3.</li>

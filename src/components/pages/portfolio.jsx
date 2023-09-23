@@ -28,12 +28,12 @@ const Portfolio = () => {
           <ProjectCard key={index} project={project} />
         ))}
 
-        <div className='project-card'>
+        <div className='special-card'>
           <h3>Find more of my completed projects</h3>
-          <a href="https://github.com/adeola003?tab=repositories" target='blank'>More projects</a>
-          <p>Support me by liking and starring those you prefer</p>
-          <p>If you also need something to be done or need a collaboration on a project, don't hesitate. Reach my contact form with the button below</p>
-          <a href="/contact" target='blank'>Reach out!</a>
+          <a className='special-links' href="https://github.com/adeola003?tab=repositories" target='blank'>More projects</a>
+          <p className='excluded message'>Support me by liking and starring those you prefer</p>
+          <p className='excluded message'>If you also need something to be done or need a collaboration on a project, don't hesitate. Reach my contact form with the button below</p>
+          <a className='special-links' href="/contact" target='blank'>Reach out!</a>
         </div>
 
       </Slider>

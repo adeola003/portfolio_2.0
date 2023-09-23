@@ -266,6 +266,23 @@
     width: 100px;
   }
 
+  @media (max-width: 768px) {
+
+    .pic-social {
+        display: none;
+    }
+
+  }
+
+  @media(min-width: 769px) and (max-width: 980px) {
+
+    .my-infos {
+        display: flex;
+        flex-direction: column;
+    }
+
+  }
+
 
 
 

@@ -102,13 +102,36 @@
   border-radius: 10px;
 }
 
+.message {
+    max-width: 70vw;
+}
+
+.special-card > :not(.excluded) {
+    text-align: center;
+}
+
+.special-links {
+    color: #333333;
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: #DEB887;
+    width: 5em;
+    height: 2em;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+  }
+
+  .special-links:hover {
+  background-color: #8B4513;
+  color: white;
+  border-radius: 10px;
+}
 
 @media (max-width: 768px) {
     .modal-images {
         display: grid;
         grid-template-columns: auto auto;
     }
-
   }
 
   @media (max-width: 368px) {
@@ -117,7 +140,6 @@
         flex-direction: column;
         align-items: center;
     }
-
 
   }
 
