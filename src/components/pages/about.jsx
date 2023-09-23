@@ -1,4 +1,3 @@
-import SkillBar from '../skillBar';
 import LevelSkills from '../LevelSkills';
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 import { IoLogoTwitter, IoLogoFacebook, IoLogoWhatsapp } from 'react-icons/io';
@@ -13,7 +12,7 @@ const About = () => {
     width: '0.7em',
     background: '#d9832e',
     color: '#fff',
-    padding: '1em',
+    padding: '0.3em',
   };
 
   return (
@@ -37,15 +36,28 @@ const About = () => {
       <section id="skills">
         <h2 className="section-header">Skills</h2>
         <hr />
-        <div className="skill-container">
-    <SkillBar skillName="Front-End Development" percentage={100} />
-    <SkillBar skillName="Back-End Development" percentage={80} />
-    <LevelSkills skill="Back-End Development" percentage={80} />
+        <h4>Front end</h4>
+        <ul className="skill-container">
+          <li><LevelSkills skill="React-Redux" percentage={80} /></li>
+          <li><LevelSkills skill="Javascript" percentage={70} /></li>
+          <li><LevelSkills skill="jQuery" percentage={70} /></li>
+          <li><LevelSkills skill="HTML5" percentage={90} /></li>
+          <li><LevelSkills skill="CSS3" percentage={70} /></li>
+          <li><LevelSkills skill="Bootstrap" percentage={50} /></li>
 
-  </div>
+
+        </ul>
+        <h4>Back end</h4>
+        <ul className="skill-container">
+        <li><LevelSkills skill="Ruby" percentage={60} /></li>
+          <li><LevelSkills skill="Ruby on rails" percentage={60} /></li>
+          <li><LevelSkills skill="PostgreSQL" percentage={50} /></li>
+          <li><LevelSkills skill="MySQL" percentage={30} /></li>
+          <li><LevelSkills skill="Node.js" percentage={20} /></li>
+          <li><LevelSkills skill="Python" percentage={5} /></li>
+        </ul>
+        <h4>Other skills</h4>
         <ul>
-          <li>Front-End: JavaScript, React, Redux, jQuery, HTML5, CSS3.</li>
-          <li>Back-End: Ruby, Rails, PostgreSQL, MySQL.</li>
           <li>Tools & Methods: Git, GitHub, Heroku, Netlify, Mobile/Responsive Development, RSpec, TDD, Chrome Dev Tools.</li>
           <li>Professional: Remote Pair-Programming, Teamwork, Mentoring, Problem-solving.</li>
         </ul>

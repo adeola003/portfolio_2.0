@@ -1,6 +1,6 @@
 /* Progress section */
 
-.book-progress {
+.skill-bar {
     margin-left: auto;
     padding-right: 2%;
     display: flex;
@@ -8,29 +8,21 @@
     text-align: center;
   }
 
-  .progress-details {
-    padding-right: 5%;
-    text-align: left;
-    margin-left: auto;
-    margin-right: 40px;
-    width: 400px;
-  }
-
-  .completion {
-    width: 3.25rem;
-    height: 2.038rem;
+  .skill-name {
+    display: flex;
+    flex-direction: column;
     margin: 0.063rem 5.75rem 0 0.688rem;
     font-family: "Montserrat", sans-serif;
-    font-size: 2rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
     color: #121212;
     line-height: 0.7;
+    row-gap: 10px;
   }
 
-  .Completed {
+  .percentage {
     width: 5rem;
     height: 1.125rem;
     opacity: 0.5;

@@ -4,12 +4,14 @@
 
 .project-card {
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-main-img {
     width: 60vw;
     text-align: center;
-    padding-left: 3em;
     max-height: 70vh;
 }
 

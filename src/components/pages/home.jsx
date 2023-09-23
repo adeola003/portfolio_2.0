@@ -1,6 +1,7 @@
 import '../../styles/home.css';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IoLogoTwitter, IoLogoFacebook, IoLogoGoogle, IoLogoWhatsapp } from 'react-icons/io';
+
 const Home = () => {
   return (
     <section className='sections'>

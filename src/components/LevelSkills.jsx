@@ -8,7 +8,7 @@ const LevelSkills = ({ percentage, skill }) => {
   const progressOffset = circumference - (percentage / 100) * circumference;
 
   return (
-    <div className="book-progress">
+    <div className="skill-bar">
       <svg width="120" height="120">
         <circle
           cx="60"
@@ -30,10 +30,10 @@ const LevelSkills = ({ percentage, skill }) => {
           fill="none"
         />
       </svg>
-      <p className="completion">
+      <p className="skill-name">
         {skill}
         <br />
-        <span className="Completed">{percentage}%</span>
+        <span className="percentage">{percentage}%</span>
       </p>
     </div>
   );
