@@ -1,6 +1,7 @@
 import '../../styles/home.css';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IoLogoTwitter, IoLogoFacebook, IoLogoGoogle, IoLogoWhatsapp } from 'react-icons/io';
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -16,8 +17,8 @@ const Home = () => {
       <a  className='social-icon home-icons' href="https://wa.me/+22966416740"target='blank'><IoLogoWhatsapp /></a>
       </div>
       <div className='actions'>
-        < ><a href="/about">More about me</a></>
-        <><a href="/contact">Get in touch</a></>
+        <NavLink exact to="/about">More about me</NavLink>
+        <NavLink exact to="/contact">Get in touch</NavLink>
       </div>
     </section>
   )
