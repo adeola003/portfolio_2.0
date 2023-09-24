@@ -27,9 +27,18 @@ const About = () => {
           <div className="details">
             <h4>I&apos;m Abdel-Khafid</h4>
             <h6>A software Developer based in Africa</h6>
+            <p>Hello, I'm Abdel-Khafid, a passionate Software Developer based in Africa. I embarked on a unique journey, transitioning from a water engineer to a full-stack developer after completing the Microverse program.
+
+</p>
             <p>
-          Water engineer transitioned to a full-stack developer after completing the Microverse program. Boasting a varied skill set and experiences, proactive in approach and fluent in several languages such as JavaScript, Ruby, and SQL. Proficient in frameworks and technologies like Ruby on Rails and React. Throughout this journey, extensively engaged in pair programming and remote collaboration. Such experiences notably sharpened both technical and non-technical communication abilities, making a premier collaborator for both remote and on-site teams.
-        </p>
+            My journey has equipped me with a diverse skill set and valuable experiences. I am proactive in my approach and fluent in languages such as JavaScript, Ruby, and SQL. I specialize in utilizing frameworks and technologies like Ruby on Rails and React to create innovative solutions.
+            </p>
+            <p>
+            Throughout my development journey, I've actively engaged in pair programming and collaborated with remote teams, honing both my technical and non-technical communication skills. These experiences have made me an effective collaborator, whether working remotely or on-site.
+            </p>
+            <p>
+            I'm enthusiastic about the endless possibilities of software development, and I'm always excited to take on new challenges and contribute to impactful projects.
+            </p>
           </div>
         </div>
       </section>
