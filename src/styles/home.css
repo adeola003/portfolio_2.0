@@ -86,10 +86,13 @@ h1 {
   /* Reduce margin for social icons on small screens */
   .social-media-container {
     margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   /* Stack action buttons on small screens */
   .actions {
+    display: flex;
     flex-direction: column;
   }
 
