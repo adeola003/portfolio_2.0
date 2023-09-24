@@ -27,17 +27,17 @@ const About = () => {
           <div className="details">
             <h4>I&apos;m Abdel-Khafid</h4>
             <h6>A software Developer based in Africa</h6>
-            <p>Hello, I'm Abdel-Khafid, a passionate Software Developer based in Africa. I embarked on a unique journey, transitioning from a water engineer to a full-stack developer after completing the Microverse program.
+            <p>Hello, I&apos;m Abdel-Khafid, a passionate Software Developer based in Africa. I embarked on a unique journey, transitioning from a water engineer to a full-stack developer after completing the Microverse program.
 
 </p>
             <p>
             My journey has equipped me with a diverse skill set and valuable experiences. I am proactive in my approach and fluent in languages such as JavaScript, Ruby, and SQL. I specialize in utilizing frameworks and technologies like Ruby on Rails and React to create innovative solutions.
             </p>
             <p>
-            Throughout my development journey, I've actively engaged in pair programming and collaborated with remote teams, honing both my technical and non-technical communication skills. These experiences have made me an effective collaborator, whether working remotely or on-site.
+            Throughout my development journey, I&apos;ve actively engaged in pair programming and collaborated with remote teams, honing both my technical and non-technical communication skills. These experiences have made me an effective collaborator, whether working remotely or on-site.
             </p>
             <p>
-            I'm enthusiastic about the endless possibilities of software development, and I'm always excited to take on new challenges and contribute to impactful projects.
+            I&apos;m enthusiastic about the endless possibilities of software development, and I&apos;m always excited to take on new challenges and contribute to impactful projects.
             </p>
           </div>
         </div>
@@ -116,8 +116,8 @@ const About = () => {
         </div>
       </section>
 <section id="contact">
-  <h2 className="section-header">Contact</h2>
-  <hr />
+  <h2 className="contact-section-header">Contact</h2>
+  <hr className='contact-line' />
   <ul className="contact-info">
     <li className="contact-item">
       <a href="mailto:khadaf3@gmail.com" className="contact-icon">

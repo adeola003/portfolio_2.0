@@ -21,13 +21,11 @@ img {
   width: 380px;
 }
 
-
 /* Styling for the About component */
 
 #about-me {
-  background-color: #f2f2f2;
+  background-color: #dfe3ee;
   padding: 2rem;
-  text-align: center;
 }
 
 .section-header {
@@ -109,13 +107,10 @@ p {
   color: #666;
 }
 
-/* Styling for other sections like Skills, Experience, Education, and Contact can be added similarly. */
-
-
 /* Styling for the Skills section */
 
 #skills {
-  background-color: #fff;
+  background-color: #fefefe;
   padding: 2rem;
 }
 
@@ -158,7 +153,7 @@ p {
 /* Styling for the Experience section */
 
 #experience {
-  background-color: #f2f2f2;
+  background-color: #5cd2c6;
   padding: 2rem;
 }
 
@@ -190,7 +185,7 @@ p {
 /* Styling for the Education section */
 
 #education {
-  background-color: #fff;
+  background-color: #a2d5d0;
   padding: 2rem;
 }
 
@@ -298,4 +293,13 @@ p {
     display: flex;
     flex-direction: column;
   }
+}
+
+#contact {
+  background-color: #363753;
+  color: #ccc;
+}
+
+.contact-section-header {
+  font-size: 2em;
 }
