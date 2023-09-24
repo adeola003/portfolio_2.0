@@ -30,14 +30,6 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
 /* Styling debut */
 
 body {
@@ -46,9 +38,4 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-}
-
-.sections {
-  margin-top: 20px;
 }

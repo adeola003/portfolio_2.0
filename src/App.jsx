@@ -4,7 +4,6 @@ import Home from './components/pages/home'
 import About from './components/pages/about'
 import Portfolio from './components/pages/portfolio'
 import Contact from './components/pages/contact'
-import Trash from './components/trash'
 
 import './App.css'
 
@@ -18,7 +17,6 @@ function App() {
       <Route path='/about' element={<About />}/>
       <Route path='/portfolio' element={<Portfolio />}/>
       <Route path='/contact' element={<Contact />}/>
-      <Route path='/trash' element={<Trash />}/>
     </Routes>
     </BrowserRouter>
   )

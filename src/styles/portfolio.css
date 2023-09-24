@@ -1,0 +1,146 @@
+.project-title {
+  text-align: center;
+}
+
+.project-card {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-main-img {
+  width: 60vw;
+  text-align: center;
+  max-height: 70vh;
+}
+
+.details-btn {
+  background-color: #deb887;
+  color: #333;
+  border: 2px solid white;
+  padding: 10px 20px;
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+}
+
+.details-btn:hover {
+  background-color: #8b4513;
+  color: white;
+  border-radius: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 40px;
+  width: 92vw;
+  margin-left: 4vw;
+}
+
+.modal-images {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.modal-image {
+  height: 80px;
+  width: 105px;
+  transition: all 0.4s;
+}
+
+.modal-image:hover {
+  height: 90px;
+  width: 115px;
+}
+
+/* Modal styles */
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  /* max-width: 60%; */
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.modal-links {
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-links a {
+  color: #333;
+  text-decoration: none;
+  border: 2px solid white;
+  background-color: #deb887;
+  width: 5em;
+  height: 2em;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+}
+
+.modal-links a:hover {
+  background-color: #8b4513;
+  color: white;
+  border-radius: 10px;
+}
+
+.message {
+  max-width: 70vw;
+}
+
+.special-card {
+  margin-top: 30px;
+}
+
+.special-card > :not(.excluded) {
+  text-align: center;
+}
+
+.special-links {
+  color: #333;
+  text-decoration: none;
+  border: 2px solid white;
+  background-color: #deb887;
+  width: 5em;
+  height: 2em;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+}
+
+.special-links:hover {
+  background-color: #8b4513;
+  color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .modal-images {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 368px) {
+  .modal-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

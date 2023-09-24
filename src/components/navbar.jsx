@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import classNames from 'classnames';
-import { FaHome, FaUser, FaBriefcase, FaEnvelope, FaTrash } from 'react-icons/fa';
+import { FaHome, FaUser, FaBriefcase, FaEnvelope } from 'react-icons/fa';
 import Hamburger from './hamburger';
+import logo from '../assets/logo.png'
 import "../styles/navbar.css"
 
 const Navbar = () => {
@@ -41,6 +42,7 @@ const Navbar = () => {
 
   const iconStyle = {
     marginRight: '10px',
+    color: 'black'
   };
 
   const toggleMenu = () => {
@@ -50,10 +52,8 @@ const Navbar = () => {
   return (
     <>
       <div className={sidebarClasses}>
-        <div className='side-logo my-logo'>Adeola</div>
+
         <ul className='side-links'>
-            <li>
-            </li>
             <li>
             <NavLink exact to="/" activeClassName='active-link'>
               <FaHome style={iconStyle} /> {/* Icon */}
@@ -78,15 +78,9 @@ const Navbar = () => {
               <span className="link-text">Contact</span>
             </NavLink>
           </li>
-          <li>
-            <NavLink exact to="/trash" activeClassName='active-link'>
-              <FaTrash style={iconStyle} /> {/* Icon */}
-              <span className="link-text">Trash</span>
-            </NavLink>
-          </li>
         </ul></div>
       <nav className={navbarClasses}>
-        <div className='nav-logo my-logo'>Adeola</div>
+        <div className='nav-logo my-logo'><img src={logo} alt="Logo" /></div>
         <>
         {(window.innerWidth <= 368) ? (
 
@@ -115,11 +109,6 @@ const Navbar = () => {
         Contact
     </NavLink>
 </li>
-<li>
-    <NavLink exact to="/trash" onClick={toggleMenu}>
-        Trash
-    </NavLink>
-</li>
   </ul>
 )}
 </div>
@@ -144,11 +133,6 @@ const Navbar = () => {
 <li>
     <NavLink exact to="/contact">
         Contact
-    </NavLink>
-</li>
-<li>
-    <NavLink exact to="/trash">
-        Trash
     </NavLink>
 </li>
 </ul>
