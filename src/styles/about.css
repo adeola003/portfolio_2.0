@@ -1,335 +1,301 @@
-
-#about-me {
-    background-color: #eaedf2;
-}
-.my-infos{
-    display: flex;
-    column-gap: 20px;
-}
-
-.pic-social {
-    border: 20px solid #fff;
-    margin-left: 15px;
-    border-radius: 8px;
-}
-
-.about-social-links {
-    position: absolute;
-    top: 175px;
-    display: flex;
-    flex-direction: column;
-    width: 3.7em;
-    height: 325px;
-    background: #fff;
-}
-
-.social-icon {
-    margin-top: 5px;
-}
-
 .social-icon svg {
-    border-radius: 10px;
-    transition: border-radius 0.3s ease;
-    width: 1.2em;
-    height: 1.2em²;
- }
+  border-radius: 10px;
+  transition: border-radius 0.3s ease;
+  width: 1.2em;
+  height: 1.2em;
+}
 
 .social-icon svg:hover {
-   border-radius: 50px;
+  border-radius: 50px;
 }
 
-
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
 
 .pic-social img {
-    height: 440px;
-    width: 380px;
+  height: 440px;
+  width: 380px;
 }
 
 
 /* Styling for the About component */
 
 #about-me {
-    background-color: #f2f2f2;
-    padding: 2rem;
-    text-align: center;
-  }
+  background-color: #f2f2f2;
+  padding: 2rem;
+  text-align: center;
+}
 
-  .section-header {
-    color: #333;
-  }
+.section-header {
+  color: #333;
+}
 
-  hr {
-    border: 1px solid #333;
-    margin: 1rem auto;
-  }
+hr {
+  border: 1px solid #333;
+  margin: 1rem auto;
+}
 
-  p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #666;
-  }
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+}
 
-  .my-infos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-  }
+.my-infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  column-gap: 20px;
+}
 
-  .pic-social {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 2rem;
-  }
+.pic-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2rem;
+  border: 20px solid #fff;
+  margin-left: 15px;
+  border-radius: 8px;
+}
 
-  .about-social-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
+.about-social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  position: absolute;
+  top: 175px;
+  width: 3.7em;
+  height: 325px;
+  background: #fff;
+}
 
-  .social-icon {
-    background-color: #d9832e;
-    border-radius: 50%;
-    padding: 0.5rem;
-    color: #fff;
-    transition: background-color 0.3s ease-in-out;
-  }
+.social-icon {
+  background-color: #d9832e;
+  border-radius: 50%;
+  margin-top: 5px;
+  padding: 0.5rem;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
 
-  .social-icon:hover {
-    background-color: #ff6600;
-  }
+.social-icon:hover {
+  background-color: #f60;
+}
 
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 1rem;
-  }
+.details {
+  text-align: left;
+  max-width: 500px;
+}
 
-  .details {
-    text-align: left;
-    max-width: 500px;
-  }
+.details h4 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
 
-  .details h4 {
-    color: #333;
-    font-size: 1.5rem;
-    margin-top: 1rem;
-  }
+.details h6 {
+  color: #666;
+  font-size: 1rem;
+}
 
-  .details h6 {
-    color: #666;
-    font-size: 1rem;
-  }
+.details p {
+  margin-top: 1rem;
+  color: #666;
+}
 
-  .details p {
-    margin-top: 1rem;
-    color: #666;
-  }
-
-  /* Styling for other sections like Skills, Experience, Education, and Contact can be added similarly. */
+/* Styling for other sections like Skills, Experience, Education, and Contact can be added similarly. */
 
 
-  /* Styling for the Skills section */
+/* Styling for the Skills section */
 
 #skills {
-    background-color: #fff;
-    padding: 2rem;
-  }
+  background-color: #fff;
+  padding: 2rem;
+}
 
-  .skills-header {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
+.skills-header {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
 
-  .skills-list {
-    list-style-type: none;
-    padding: 0;
-  }
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
 
-  .skill-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem;
-  }
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
 
-  .skill-icon {
-    font-size: 1.2rem;
-    color: #d9832e;
-    margin-right: 1rem;
-  }
+.skill-icon {
+  font-size: 1.2rem;
+  color: #d9832e;
+  margin-right: 1rem;
+}
 
-  .skill-name {
-    color: #333;
-  }
+.skill-name {
+  color: #333;
+}
 
-  .skill-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));;
-  }
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
 
-  .skill-container li {
-    list-style: none;
-  }
+.skill-container li {
+  list-style: none;
+}
 
-  /* Styling for the Experience section */
+/* Styling for the Experience section */
 
-  #experience {
-    background-color: #f2f2f2;
-    padding: 2rem;
-  }
+#experience {
+  background-color: #f2f2f2;
+  padding: 2rem;
+}
 
-  .experience-header {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
+.experience-header {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
 
-  .job-title {
-    color: #d9832e;
-    font-weight: bold;
-  }
+.job-title {
+  color: #d9832e;
+  font-weight: bold;
+}
 
-  .company {
-    color: #333;
-  }
+.company {
+  color: #333;
+}
 
-  .job-date {
-    color: #666;
-    margin-top: 0.5rem;
-  }
+.job-date {
+  color: #666;
+  margin-top: 0.5rem;
+}
 
-  .job-description {
-    margin-top: 1rem;
-    color: #666;
-  }
+.job-description {
+  margin-top: 1rem;
+  color: #666;
+}
 
-  /* Styling for the Education section */
+/* Styling for the Education section */
 
-  #education {
-    background-color: #fff;
-    padding: 2rem;
-  }
+#education {
+  background-color: #fff;
+  padding: 2rem;
+}
 
-  .education-header {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
+.education-header {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
 
-  .school {
-    color: #d9832e;
-    font-weight: bold;
-  }
+.school {
+  color: #d9832e;
+  font-weight: bold;
+}
 
-  .degree {
-    color: #333;
-  }
+.degree {
+  color: #333;
+}
 
-  .school-date {
-    color: #666;
-    margin-top: 0.5rem;
-  }
+.school-date {
+  color: #666;
+  margin-top: 0.5rem;
+}
 
-
-  .contact-info{
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-
-
+.contact-info {
+  display: grid;
+  grid-template-columns: auto auto;
+}
 
 .contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #d9832e;
+}
+
+.contact-text {
+  font-size: 16px;
+}
+
+/* Styles for the social links */
+.contact-info a {
+  text-decoration: none;
+}
+
+.contact-info a:hover .contact-icon {
+  color: #ffbb5c; /* Change to a different color on hover */
+}
+
+.contact-icon svg:hover {
+  color: #199498; /* Change to a different color on hover */
+}
+
+.wellfnd {
+  width: 100px;
+}
+
+/* Download button */
+
+.download-button {
+  display: inline-block;
+  background-color: #0078d4; /* Choose your desired background color */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 5px;
+  font-size: 16px; /* Adjust font size as needed */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover animation */
+.download-button:hover {
+  background-color: #005ea2; /* Change background color on hover */
+  transform: scale(1.05); /* Scale the button slightly on hover */
+}
+
+/* Optional: Add additional styles for focus and active states */
+.download-button:focus {
+  outline: none; /* Remove the default focus outline */
+  box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.3); /* Add a box shadow on focus */
+}
+
+.download-button:active {
+  transform: scale(0.95); /* Scale the button down slightly when clicked */
+}
+
+.cv-download-button {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .pic-social {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 980px) {
+  .my-infos {
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    flex-direction: column;
   }
-
-  .contact-icon {
-    font-size: 24px;
-    margin-right: 10px;
-    color: #d9832e;
-  }
-
-  .contact-text {
-    font-size: 16px;
-  }
-
-  /* Styles for the social links */
-  .contact-info a {
-    text-decoration: none;
-  }
-
-  .contact-info a:hover .contact-icon {
-    color: #ffbb5c; /* Change to a different color on hover */
-  }
-
-  .contact-icon svg:hover {
-    color: #199498; /* Change to a different color on hover */
-  }
-
-  .wellfnd {
-    width: 100px;
-  }
-
-  /* Download button */
-
-  .download-button {
-    display: inline-block;
-    background-color: #0078d4; /* Choose your desired background color */
-    color: #fff; /* Text color */
-    border: none;
-    padding: 10px 20px; /* Adjust padding as needed */
-    border-radius: 5px;
-    font-size: 16px; /* Adjust font size as needed */
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-
-  /* Hover animation */
-  .download-button:hover {
-    background-color: #005ea2; /* Change background color on hover */
-    transform: scale(1.05); /* Scale the button slightly on hover */
-  }
-
-  /* Optional: Add additional styles for focus and active states */
-  .download-button:focus {
-    outline: none; /* Remove the default focus outline */
-    box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.3); /* Add a box shadow on focus */
-  }
-
-  .download-button:active {
-    transform: scale(0.95); /* Scale the button down slightly when clicked */
-  }
-
-  .cv-download-button {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-
-
-
-  @media (max-width: 768px) {
-
-    .pic-social {
-        display: none;
-    }
-
-  }
-
-  @media(min-width: 769px) and (max-width: 980px) {
-
-    .my-infos {
-        display: flex;
-        flex-direction: column;
-    }
-
-  }
-
-
-
-
+}

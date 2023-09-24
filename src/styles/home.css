@@ -1,93 +1,92 @@
 /* Home Container */
 .sections {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #eaedf2; /* Background color (customize as needed) */
-    color: gray;
-    text-align: center;
-    padding: 2rem;
-    background-image: url(../assets/svgs/abt_top_left.svg), url(../assets/svgs/bottom_right_cont.svg);
-    background-position: top left, bottom right;
-    background-repeat: no-repeat, no-repeat;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #eaedf2; /* Background color (customize as needed) */
+  color: gray;
+  text-align: center;
+  padding: 2rem;
+  background-image: url(../assets/svgs/abt_top_left.svg), url(../assets/svgs/bottom_right_cont.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+}
 
-  /* Section Header */
-  .section-header {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
+/* Section Header */
+.section-header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-  /* Main Heading */
+/* Main Heading */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Social Media Icons */
+.social-media-container {
+  margin: 2rem 0;
+}
+
+.social-icon {
+  font-size: 2rem;
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #0056b3; /* Hover color (customize as needed) */
+}
+
+/* Action Buttons */
+.actions {
+  margin-top: 2rem;
+}
+
+.actions button {
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+  background-color: #0056b3; /* Hover background color (customize as needed) */
+  color: #fff;
+}
+
+/* Responsive Design (adjust as needed) */
+@media (max-width: 768px) {
+  /* Center align text for small screens */
   h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
+    text-align: center;
   }
 
-  /* Social Media Icons */
+  /* Reduce margin for social icons on small screens */
   .social-media-container {
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 
-  .social-icon {
-    font-size: 2rem;
-    margin: 0 1rem;
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .social-icon:hover {
-    color: #0056b3; /* Hover color (customize as needed) */
-  }
-
-  /* Action Buttons */
+  /* Stack action buttons on small screens */
   .actions {
-    margin-top: 2rem;
+    flex-direction: column;
   }
 
   .actions button {
-    background-color: #fff;
-    color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 1rem 2rem;
-    margin: 0.5rem;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+    width: 100%;
+    margin: 0.25rem 0;
   }
-
-  .actions button:hover {
-    background-color: #0056b3; /* Hover background color (customize as needed) */
-    color: #fff;
-  }
-
-  /* Responsive Design (adjust as needed) */
-  @media (max-width: 768px) {
-    /* Center align text for small screens */
-    h1 {
-      text-align: center;
-    }
-
-    /* Reduce margin for social icons on small screens */
-    .social-media-container {
-      margin: 1rem 0;
-    }
-
-    /* Stack action buttons on small screens */
-    .actions {
-      flex-direction: column;
-    }
-
-    .actions button {
-      width: 100%;
-      margin: 0.25rem 0;
-    }
-  }
-
+}

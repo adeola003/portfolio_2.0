@@ -1,37 +1,37 @@
 /* Progress section */
 
 .skill-bar {
-    margin-left: auto;
-    padding-right: 2%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
+  margin-left: auto;
+  padding-right: 2%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
-  .skill-name {
-    display: flex;
-    flex-direction: column;
-    margin: 0.063rem 5.75rem 0 0.688rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: normal;
-    color: #121212;
-    line-height: 0.7;
-    row-gap: 10px;
-  }
+.skill-name {
+  display: flex;
+  flex-direction: column;
+  margin: 0.063rem 5.75rem 0 0.688rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #121212;
+  line-height: 0.7;
+  row-gap: 10px;
+}
 
-  .percentage {
-    width: 5rem;
-    height: 1.125rem;
-    opacity: 0.5;
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.875rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #121212;
-  }
+.percentage {
+  width: 5rem;
+  height: 1.125rem;
+  opacity: 0.5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}

@@ -69,7 +69,6 @@
 }
 
 .nav-links li a:hover {
-  text-decoration: none;
   color: blueviolet;
   text-decoration: underline;
 }
