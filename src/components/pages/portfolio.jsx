@@ -1,4 +1,3 @@
-import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -32,7 +31,7 @@ const Portfolio = () => {
           <h3>Find more of my completed projects</h3>
           <a className='special-links' href="https://github.com/adeola003?tab=repositories" target='blank'>More projects</a>
           <p className='excluded message'>Support me by liking and starring those you prefer</p>
-          <p className='excluded message'>If you also need something to be done or need a collaboration on a project, don't hesitate. Reach my contact form with the button below</p>
+          <p className='excluded message'>If you also need something to be done or need a collaboration on a project, don&apos;t hesitate. Reach my contact form with the button below</p>
           <a className='special-links' href="/contact" target='blank'>Reach out!</a>
         </div>
 

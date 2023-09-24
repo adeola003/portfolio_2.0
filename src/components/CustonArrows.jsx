@@ -1,5 +1,5 @@
-import React from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import PropTypes from 'prop-types';
 import "../styles/arrows.css";
 
 const CustomPrevArrow = (props) => (
@@ -13,5 +13,14 @@ const CustomNextArrow = (props) => (
     <FaArrowRight />
   </div>
 );
+
+CustomPrevArrow.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
+
+CustomNextArrow.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
+
 
 export { CustomPrevArrow, CustomNextArrow };

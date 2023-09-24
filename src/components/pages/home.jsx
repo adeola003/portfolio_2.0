@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <section className='sections'>
       <h2 className='section-header'>Hello There!</h2>
-      <h1>I'm Abdel-Khafid SALAOU</h1>
+      <h1>I&apos;m Abdel-Khafid SALAOU</h1>
       <div className='social-media-container'>
       <a  className='social-icon' href="https://github.com/adeola003" target='blank'><FaGithub /></a>
       <a  className='social-icon' href="https://www.linkedin.com/in/abdel-khafid-salaou/"target='blank'><FaLinkedin /></a>

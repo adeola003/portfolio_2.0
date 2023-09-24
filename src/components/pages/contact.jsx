@@ -17,7 +17,7 @@ const Form = () => {
       <h2>Get in touch</h2>
       {isSubmitted ? (
         <div className="success-message">
-          Thank you for your message! We'll get back to you soon.
+          Thank you for your message! We&apos;ll get back to you soon.
           {/* You can customize this message as needed. */}
         </div>
       ) : (

@@ -1,5 +1,5 @@
-import React from 'react';
 import '../styles/level.css';
+import PropTypes from "prop-types";
 
 const LevelSkills = ({ percentage, skill }) => {
   const strokeWidth = 10;
@@ -38,5 +38,10 @@ const LevelSkills = ({ percentage, skill }) => {
     </div>
   );
 };
+
+LevelSkills.propTypes = {
+  percentage: PropTypes.number.isRequired,
+  skill: PropTypes.string.isRequired
+}
 
 export default LevelSkills;

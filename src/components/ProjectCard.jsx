@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Modal from './Modal';
+import PropTypes from "prop-types";
 
 const ProjectCard = ({ project }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,7 +30,7 @@ const ProjectCard = ({ project }) => {
           <div className='modal-images'>
             {/* Display more screenshots */}
             {project.screenshots.map((screenshot, index) => (
-              <a className='screen-link' href={screenshot} target='blank'><img className='modal-image' key={index} src={screenshot} alt={`Screenshot ${index + 1}`} /></a>
+              <a className='screen-link' key={index} href={screenshot} target='blank'><img className='modal-image' src={screenshot} alt={`Screenshot ${index + 1}`} /></a>
             ))}
           </div>
           <div className='modal-links'>
@@ -44,5 +45,9 @@ const ProjectCard = ({ project }) => {
     </div>
   );
 };
+
+ProjectCard.propTypes = {
+    project: PropTypes.array.isRequired
+}
 
 export default ProjectCard;

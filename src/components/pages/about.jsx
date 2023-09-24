@@ -25,7 +25,7 @@ const About = () => {
             <img src={pic} alt="my photo" />
           </div>
           <div className="details">
-            <h4>I'm Abdel-Khafid</h4>
+            <h4>I&apos;m Abdel-Khafid</h4>
             <h6>A software Developer based in Africa</h6>
             <p>
           Water engineer transitioned to a full-stack developer after completing the Microverse program. Boasting a varied skill set and experiences, proactive in approach and fluent in several languages such as JavaScript, Ruby, and SQL. Proficient in frameworks and technologies like Ruby on Rails and React. Throughout this journey, extensively engaged in pair programming and remote collaboration. Such experiences notably sharpened both technical and non-technical communication abilities, making a premier collaborator for both remote and on-site teams.
@@ -123,7 +123,7 @@ const About = () => {
       <span className="contact-text">+229 66 41 67 40</span>
     </li>
     <li className="contact-item">
-      <a href="https://github.com/adeola003" className="contact-icon" target="_blank">
+      <a href="https://github.com/adeola003" className="contact-icon" target="blank">
         <FaGithub style={iconStyle} />
       </a>
       <span className="contact-text">adeola003</span>

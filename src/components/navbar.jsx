@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import classNames from 'classnames';
-import { FaHome, FaUser, FaBriefcase, FaEnvelope, FaTrash } from 'react-icons/fa';
+import { FaHome, FaUser, FaBriefcase, FaEnvelope } from 'react-icons/fa';
 import Hamburger from './hamburger';
 import logo from '../assets/logo.png'
 import "../styles/navbar.css"
