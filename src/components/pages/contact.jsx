@@ -1,16 +1,23 @@
 import { useState } from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
-
+import { useForm, ValidationError } from '@formspree/react';
 import '../../styles/contact.css';
 
 const Form = () => {
 
+  const [state, handleSubmit] = useForm("xrgwywqo");
+
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    handleSubmit(e);
+      setTimeout(() => {
+        setIsSubmitted(true);
+      }, 100);
+
   };
+
 
   return (
     <div className="form-container">
@@ -18,14 +25,12 @@ const Form = () => {
       {isSubmitted ? (
         <div className="success-message">
           Thank you for your message! We&apos;ll get back to you soon.
-          {/* You can customize this message as needed. */}
+
         </div>
       ) : (
         <form
           className="contact-form"
-          action="https://formspree.io/f/mnqkgvbr"
-          method="POST"
-          onSubmit={handleSubmit}
+          onSubmit={handleFormSubmit}
         >
           <div className="form-group">
             <label htmlFor="name">Name</label>
@@ -34,12 +39,22 @@ const Form = () => {
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Your Email" required />
+            <ValidationError
+        prefix="Email"
+        field="email"
+        errors={state.errors}
+      />
           </div>
           <div className="form-group">
             <label htmlFor="message">Message</label>
             <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <ValidationError
+        prefix="Message"
+        field="message"
+        errors={state.errors}
+      />
           </div>
-          <button type="submit">Send</button>
+          <button type="submit" disabled={state.submitting}>Send</button>
         </form>
       )}
       <div className="social-footer">
