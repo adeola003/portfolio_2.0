@@ -65,7 +65,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live website](https://deolawebsite.netlify.app/)
+- [Live website](https://adeolawebsite.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
