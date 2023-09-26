@@ -22,8 +22,6 @@
   flex-wrap: wrap;
 }
 
-
-
 .details-btn {
   background-color: #deb887;
   color: #333;
@@ -152,6 +150,7 @@
     flex-direction: column;
     align-items: center;
   }
+
   .project-main-img {
     max-height: 90vh;
   }

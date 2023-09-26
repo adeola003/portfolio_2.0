@@ -10,7 +10,7 @@ const Home = () => {
       <h1>I&apos;m Abdel-Khafid SALAOU</h1>
       <h2>Full Stack Developer</h2>
       <p>
-        I'm a Beninese based Full-Stack Developer | Passionate about creating innovative web solutions | JavaScript | React | PostgreSQL | Ruby on Rails | | HTML/CSS | Full-Stack Development | Web Development
+        I&apos;m a Beninese based Full-Stack Developer | Passionate about creating innovative web solutions | JavaScript | React | PostgreSQL | Ruby on Rails | | HTML/CSS | Full-Stack Development | Web Development
       </p>
       <div className='social-media-container'>
       <a  className='social-icon home-icons' href="https://github.com/adeola003" target='blank'><FaGithub /></a>
