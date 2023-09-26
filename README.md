@@ -170,7 +170,7 @@ To check for js errors run:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [https://github.com/adeola003/bookstore/issues](issue page).
+Feel free to check the [https://github.com/adeola003/portfolio_2.0/issues](issue page).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
