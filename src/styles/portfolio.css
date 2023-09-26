@@ -15,6 +15,15 @@
   max-height: 70vh;
 }
 
+.project-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+
 .details-btn {
   background-color: #deb887;
   color: #333;
