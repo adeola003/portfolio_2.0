@@ -10,14 +10,14 @@
 }
 
 .project-main-img {
-  width: 60vw;
+  width: 94vw;
   text-align: center;
   max-height: 70vh;
 }
 
 .project-buttons {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -56,14 +56,14 @@
 }
 
 .modal-image {
-  height: 80px;
-  width: 105px;
+  height: 160px;
+  width: 205px;
   transition: all 0.4s;
 }
 
 .modal-image:hover {
-  height: 90px;
-  width: 115px;
+  height: 190px;
+  width: 225px;
 }
 
 /* Modal styles */
@@ -151,5 +151,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .project-main-img {
+    max-height: 90vh;
   }
 }
