@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
         <div className='project-buttons'>
           <button className='details-btn' onClick={openModal}>Details</button>
           <button className='details-btn'><a className='details-btn-links' href={project.github} target='blank'>See source</a></button>
-          {project.live ? (<button className='details-btn'><a className='details-btn-links' href={project.github} target='blank'>Live site</a></button>) : null}
+          {project.live ? (<button className='details-btn'><a className='details-btn-links' href={project.live} target='blank'>Live site</a></button>) : null}
         </div>
       </div>
       {isModalOpen && (
