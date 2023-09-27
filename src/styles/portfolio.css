@@ -15,7 +15,7 @@
   max-height: 90vh;
 }
 
-.project-card a {
+.main-img-link {
   width: 94vw;
   max-height: 90vh;
   transition: all 0.3s;
@@ -23,7 +23,6 @@
 
 .project-buttons {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -32,9 +31,8 @@
   background-color: #deb887;
   color: #333;
   border: 2px solid white;
+  width: 100px;
   padding: 10px 20px;
-  margin-left: 40%;
-  margin-right: 40%;
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
@@ -45,6 +43,16 @@
   background-color: #8b4513;
   color: white;
   border-radius: 10px;
+}
+
+.details-btn-links {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.details-btn-links:hover {
+  color: #fff;
 }
 
 .modal {
@@ -118,8 +126,8 @@
   max-width: 70vw;
 }
 
-.project-card a:hover,
-.project-card a:focus {
+.main-img-link:hover,
+.main-img-link:focus {
   border: 3px solid rgb(100, 67, 130);
   border-radius: 8px;
 }

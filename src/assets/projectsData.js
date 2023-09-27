@@ -10,7 +10,7 @@ const projectsData = [
          'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/space_traveler/space4.png',
         ],
         github: 'https://github.com/adeola003/React-group-project',
-        live: null
+        live: 'https://deolaspaceship.onrender.com/'
       },
 
       {
@@ -31,6 +31,41 @@ const projectsData = [
 
       {
         id: 3,
+        name: 'Bookstore',
+        description: 'This project is an web app that replicate a bookstore and give user possibility to add and remove books using react-redux, and an API for interractions.',
+        techStack: ['React', 'Redux', 'Javascript', 'Jest', 'Restful API', 'CSS'],
+        screenshots: ['https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/Bookstore/bookstore_(1).png',
+        'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/Bookstore/bookstore_(2).png',
+        'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/Bookstore/bookstore_(3).png',
+    ],
+        github: 'https://github.com/adeola003/bookstore',
+        live: 'https://deolabookstore.onrender.com/'
+      },
+
+      {
+        id: 4,
+        name: 'Math Magician',
+        description: 'This project is an basic calculator web app that allows users to perform simple calculations and displays inspirational quotes fetched from an api endpoint.',
+        techStack: ['React', 'Redux', 'Javascript', 'Jest', 'Restful API', 'CSS'],
+        screenshots: ['https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/math_magician/calculator%20(1).png', 'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/math_magician/calculator%20(2).png',
+        'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/math_magician/calculator%20(3).png', 'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/math_magician/calculator%20(4).png'
+    ],
+        github: 'https://github.com/adeola003/math-magician',
+        live: 'https://deolacalculator.netlify.app/'
+      },
+
+      {
+        id: 5,
+        name: 'Meals',
+        description: 'This project is basic website that display meals from an API, display their instructions, and allow usee to add comment and likes.',
+        techStack: ['HTML', 'Webpack', 'Javascript', 'Jest', 'Restful API', 'CSS'],
+        screenshots: ['https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/meals/meals%20(1).png', 'https://raw.githubusercontent.com/adeola003/projects_images', 'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/meals/meals%20(21).png', 'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/meals/meals%20(3).png', 'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/meals/meals%20(4).png'],
+        github: 'https://github.com/adeola003/Javascript_Capstone_project',
+        live: 'https://adeola003.github.io/Javascript_Capstone_project/dist'
+      },
+
+      {
+        id: 6,
         name: 'Property rental',
         description: 'Property Rental App is a Full stack web application designed to facilitate the booking of appointments to view and rent properties. The project follows a provided design and layout but adapts the content to offer a platform for reserving appointments with properties for rent.',
         techStack: ['React', 'Redux','Ruby on Rails', 'Javascript', 'Jest', 'Rspec', 'Restful API', 'Swagger', 'Capybara', 'CSS'],
@@ -44,41 +79,6 @@ const projectsData = [
         'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/property_rentals/property_(10).png'
         ],
         github: 'https://github.com/adeola003/backend_property_rental',
-        live: null
-      },
-
-      {
-        id: 4,
-        name: 'Bookstore',
-        description: 'This project is an web app that replicate a bookstore and give user possibility to add and remove books using react-redux, and an API for interractions.',
-        techStack: ['React', 'Redux', 'Javascript', 'Jest', 'Restful API', 'CSS'],
-        screenshots: ['https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/Bookstore/bookstore_(1).png',
-        'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/Bookstore/bookstore_(2).png',
-        'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/Bookstore/bookstore_(3).png',
-    ],
-        github: 'https://github.com/adeola003/bookstore',
-        live: null
-      },
-
-      {
-        id: 5,
-        name: 'Math Magician',
-        description: 'This project is an basic calculator web app that allows users to perform simple calculations and displays inspirational quotes fetched from an api endpoint.',
-        techStack: ['React', 'Redux', 'Javascript', 'Jest', 'Restful API', 'CSS'],
-        screenshots: ['https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/math_magician/calculator%20(1).png', 'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/math_magician/calculator%20(2).png',
-        'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/math_magician/calculator%20(3).png', 'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/math_magician/calculator%20(4).png'
-    ],
-        github: 'https://github.com/adeola003/math-magician',
-        live: null
-      },
-
-      {
-        id: 6,
-        name: 'Meals',
-        description: 'This project is basic website that display meals from an API, display their instructions, and allow usee to add comment and likes.',
-        techStack: ['HTML', 'Webpack', 'Javascript', 'Jest', 'Restful API', 'CSS'],
-        screenshots: ['https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/meals/meals%20(1).png', 'https://raw.githubusercontent.com/adeola003/projects_images', 'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/meals/meals%20(21).png', 'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/meals/meals%20(3).png', 'https://raw.githubusercontent.com/adeola003/projects_images/4e3773ab65f7ec21fab51b6a1eafcb5808474ab8/projects-shots/meals/meals%20(4).png'],
-        github: 'https://github.com/adeola003/Javascript_Capstone_project',
         live: null
       },
 
