@@ -15,7 +15,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div className="project-card">
-      <a href={project.github} target='blank'><img className='project-main-img' src={project.screenshots[0]} alt={project.name} /></a>
+      {project.live ? (<a href={project.live} target='blank'><img className='project-main-img' src={project.screenshots[0]} alt={project.name} /></a>) : (<a href={project.github} target='blank'><img className='project-main-img' src={project.screenshots[0]} alt={project.name} /></a>)}
       <div className="project-details">
         <h3>{project.name}</h3>
         <p>{project.description}</p>
