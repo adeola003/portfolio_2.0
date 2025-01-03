@@ -88,7 +88,6 @@ const About = () => {
           <p>February 2018 - September 2022</p>
           <ul>
             <li>Assured both the conception (drawing, modeling) and the realization of 1000+ water supply systems.</li>
-            <li>Temporarily acted as the head of the distribution department for 2 months during holidays.</li>
             <li>Conducted feasibility studies for over 500 projects related to potable water supply and supervised the implementation of more than 100 of them.</li>
             <li>Developed an Excel program for hydraulic calculations and simulations.</li>
           </ul>
